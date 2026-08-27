@@ -1,263 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Liverpool Pro Plumbing | 24/7 Emergency Plumber</title>
+<title>AquaFix Plumbing | 24/7 Emergency Plumbers</title>
+<meta name="description" content="AquaFix Plumbing provides fast, reliable plumbing services across Liverpool and surrounding areas.">
 
-    <meta name="description"
-        content="Professional plumbing services across Liverpool. Emergency call-outs, repairs, installations and more.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #172033;
-            background: #ffffff;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        header {
-            background: #071a33;
-            color: white;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #142033;
+    background: #ffffff;
+    line-height: 1.6;
+}
 
-        header h1 {
-            font-size: 24px;
-        }
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
 
-        header a {
-            background: #0b84f3;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+/* TOP BAR */
 
-        .hero {
-            background: linear-gradient(135deg, #071a33, #0b4c83);
-            color: white;
-            padding: 100px 8%;
-        }
+.topbar {
+    background: #071a2f;
+    color: #dbeafe;
+    padding: 10px 0;
+    font-size: 14px;
+}
 
-        .hero h2 {
-            font-size: 52px;
-            max-width: 700px;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+}
 
-        .hero p {
-            font-size: 20px;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
+/* NAVIGATION */
 
-        .button {
-            display: inline-block;
-            background: #0b84f3;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav {
+    background: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #e8edf3;
+}
 
-        section {
-            padding: 70px 8%;
-        }
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #071a2f;
+}
 
-        .section-title h2 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+.logo span {
+    color: #0784f9;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
 
-        .service {
-            padding: 30px;
-            background: #f4f7fa;
-            border-radius: 10px;
-        }
+.nav-links a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+}
 
-        .service h3 {
-            margin-bottom: 10px;
-        }
+.nav-links a:hover {
+    color: #0784f9;
+}
 
-        .why {
-            background: #eef5fb;
-        }
+.nav-button {
+    background: #0784f9;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 7px;
+}
 
-        .why ul {
-            max-width: 600px;
-            margin: auto;
-            list-style: none;
-        }
+/* HERO */
 
-        .why li {
-            background: white;
-            padding: 18px;
-            margin: 10px 0;
-            border-radius: 6px;
-        }
+.hero {
+    background:
+        linear-gradient(90deg, rgba(4,22,42,.97), rgba(5,54,91,.88)),
+        url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=1800&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 110px 0;
+}
 
-        .contact {
-            text-align: center;
-            background: #071a33;
-            color: white;
-        }
+.hero-content {
+    max-width: 700px;
+}
 
-        .contact h2 {
-            font-size: 40px;
-            margin-bottom: 15px;
-        }
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 8px 14px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
 
-        footer {
-            text-align: center;
-            background: #041020;
-            color: #aaa;
-            padding: 20px;
-        }
+.hero h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
 
-        @media (max-width: 800px) {
-            .hero h2 {
-                font-size: 38px;
-            }
+.hero h1 span {
+    color: #39a4ff;
+}
 
-            .services {
-                grid-template-columns: 1fr 1fr;
-            }
+.hero p {
+    font-size: 19px;
+    color: #dbeafe;
+    max-width: 620px;
+    margin-bottom: 32px;
+}
 
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
+.buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
 
-        @media (max-width: 500px) {
-            .services {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.primary-button {
+    background: #0784f9;
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    color: #071a2f;
+}
+
+/* TRUST */
+
+.trust {
+    background: #f6f9fc;
+    padding: 25px 0;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.trust-item {
+    font-weight: 700;
+    color: #25364d;
+}
+
+.trust-item span {
+    display: block;
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 400;
+}
+
+/* SECTIONS */
+
+section.content-section {
+    padding: 90px 0;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+/* SERVICES */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 32px;
+    border: 1px solid #e5eaf0;
+    border-radius: 12px;
+    background: white;
+    transition: .2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(7,30,60,.1);
+}
+
+.service-icon {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #64748b;
+}
+
+/* EMERGENCY */
+
+.emergency {
+    background: #071a2f;
+    color: white;
+    padding: 70px 0;
+}
+
+.emergency-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.emergency h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.emergency p {
+    color: #cbd5e1;
+}
+
+/* WHY US */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.why-image {
+    min-height: 400px;
+    border-radius: 15px;
+    background:
+        linear-gradient(rgba(5,30,55,.15), rgba(5,30,55,.15)),
+        url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.features {
+    display: grid;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    gap: 15px;
+}
+
+.check {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    background: #e7f4ff;
+    color: #0784f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+/* REVIEWS */
+
+.reviews {
+    background: #f6f9fc;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.review {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.stars {
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.review p {
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.review strong {
+    color: #142033;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0784f9, #0562bd);
+    color: white;
+}
+
+.cta h2 {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+    color: #e0f2fe;
+}
+
+/* FOOTER */
+
+footer {
+    background: #041221;
+    color: #94a3b8;
+    padding: 50px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #94a3b8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.copyright {
+    border-top: 1px solid #1e3348;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .topbar .container {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .services,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-image {
+        min-height: 300px;
+    }
+
+    .emergency-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta h2 {
+        font-size: 34px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Liverpool Pro Plumbing</h1>
-    <a href="tel:00000000000">Call Now</a>
-</header>
+<div class="topbar">
+    <div class="container">
+        <span>📍 Serving Liverpool & surrounding areas</span>
+        <span>Available 24/7 for emergencies</span>
+    </div>
+</div>
+
+<nav>
+    <div class="container nav-inner">
+        <div class="logo">Aqua<span>Fix</span> Plumbing</div>
+
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact" class="nav-button">Get a Quote</a></li>
+        </ul>
+    </div>
+</nav>
 
 <section class="hero">
-    <h2>Reliable Plumbing When You Need It Most</h2>
+    <div class="container">
+        <div class="hero-content">
 
-    <p>
-        Professional plumbing services across Liverpool.
-        Emergency call-outs, repairs and installations.
-    </p>
+            <div class="badge">24/7 Emergency Plumbing</div>
 
-    <a class="button" href="tel:00000000000">
-        Get a Free Quote
-    </a>
-</section>
+            <h1>
+                Your local plumber.<br>
+                <span>When you need us.</span>
+            </h1>
 
-<section>
-    <div class="section-title">
-        <h2>Our Plumbing Services</h2>
-        <p>Professional solutions for your home or business.</p>
-    </div>
-
-    <div class="services">
-
-        <div class="service">
-            <h3>🚨 Emergency Plumbing</h3>
             <p>
-                Fast assistance for burst pipes, leaks and other
-                plumbing emergencies.
+                Fast, professional plumbing services across Liverpool.
+                From emergency leaks to bathroom installations, we're here to help.
             </p>
-        </div>
 
-        <div class="service">
-            <h3>🔧 Plumbing Repairs</h3>
-            <p>
-                Reliable repairs for taps, toilets, pipes and
-                other plumbing problems.
-            </p>
-        </div>
+            <div class="buttons">
+                <a href="tel:00000000000" class="primary-button">
+                    📞 Call 00000 000000
+                </a>
 
-        <div class="service">
-            <h3>🚿 Bathroom Plumbing</h3>
-            <p>
-                Plumbing installation and repairs for bathrooms,
-                showers and sinks.
-            </p>
-        </div>
+                <a href="#services" class="secondary-button">
+                    View Our Services
+                </a>
+            </div>
 
-        <div class="service">
-            <h3>🔥 Heating & Hot Water</h3>
-            <p>
-                Plumbing services for heating and hot-water systems.
-            </p>
         </div>
-
     </div>
 </section>
 
-<section class="why">
+<div class="trust">
+    <div class="container trust-grid">
 
-    <div class="section-title">
-        <h2>Why Choose Us?</h2>
+        <div class="trust-item">
+            ⚡ Fast Response
+            <span>Quick help when you need it</span>
+        </div>
+
+        <div class="trust-item">
+            🕐 Available 24/7
+            <span>Emergency call-outs available</span>
+        </div>
+
+        <div class="trust-item">
+            ⭐ Professional Service
+            <span>Quality workmanship every time</span>
+        </div>
+
     </div>
+</div>
 
-    <ul>
-        <li>✓ Available for emergency call-outs</li>
-        <li>✓ Fast and reliable service</li>
-        <li>✓ Professional workmanship</li>
-        <li>✓ Free quotes</li>
-        <li>✓ Serving Liverpool and surrounding areas</li>
-    </ul>
+<section class="content-section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>Plumbing Services</h2>
+            <p>
+                Whatever the problem, our team can help keep your
+                home or business running smoothly.
+            </p>
+        </div>
+
+        <div class="services">
+
+            <div class="service-card">
+                <div class="service-icon">🚨</div>
+                <h3>Emergency Plumbing</h3>
+                <p>
+                    Burst pipes, serious leaks and plumbing emergencies.
+                    Get fast assistance when you need it most.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Plumbing Repairs</h3>
+                <p>
+                    Reliable repairs for leaking taps, toilets,
+                    pipes and other common plumbing problems.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🚿</div>
+                <h3>Bathrooms</h3>
+                <p>
+                    Plumbing for bathroom renovations, showers,
+                    sinks, toilets and new installations.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>Heating & Hot Water</h3>
+                <p>
+                    Plumbing support for hot-water systems,
+                    radiators and heating-related problems.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💧</div>
+                <h3>Leak Detection</h3>
+                <p>
+                    Help finding and repairing leaks before
+                    they cause expensive damage.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Commercial Plumbing</h3>
+                <p>
+                    Plumbing maintenance and repairs for
+                    businesses and commercial properties.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="emergency">
+
+    <div class="container emergency-inner">
+
+        <div>
+            <h2>Got a plumbing emergency?</h2>
+            <p>Don't wait. Give us a call and we'll help as quickly as possible.</p>
+        </div>
+
+        <a href="tel:00000000000" class="primary-button">
+            Call Now
+        </a>
+
+    </div>
 
 </section>
 
-<section class="contact">
+<section class="content-section" id="about">
 
-    <h2>Need a Plumber?</h2>
+    <div class="container why-grid">
 
-    <p>
-        Get in touch today for a free quote.
-    </p>
+        <div class="why-image"></div>
 
-    <br>
+        <div>
 
-    <a class="button" href="tel:00000000000">
-        Call 00000 000000
-    </a>
+            <div class="section-heading" style="text-align:left;margin:0 0 30px;">
+                <h2>A plumber you can rely on.</h2>
+                <p>
+                    At AquaFix Plumbing, we believe plumbing problems
+                    shouldn't become bigger problems.
+                </p>
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Fast response</strong>
+                        <p>We aim to get to you as quickly as possible.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Clear communication</strong>
+                        <p>No confusing jargon. We'll explain the problem clearly.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="check">✓</div>
+                    <div>
+                        <strong>Quality workmanship</strong>
+                        <p>Professional work designed to solve the problem properly.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="content-section reviews" id="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>What Our Customers Say</h2>
+            <p>Demo testimonials — replace these with genuine customer reviews for a real business.</p>
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Really quick response and the problem was sorted
+                    much faster than I expected."
+                </p>
+                <strong>— Demo Customer</strong>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Professional from start to finish. Everything was
+                    explained clearly and the work was excellent."
+                </p>
+                <strong>— Demo Customer</strong>
+            </div>
+
+            <div class="review">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Called with an emergency and got help quickly.
+                    Very happy with the service."
+                </p>
+                <strong>— Demo Customer</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>Need a plumber?</h2>
+
+        <p>
+            Contact AquaFix Plumbing today for a quote.
+        </p>
+
+        <a href="tel:00000000000" class="secondary-button">
+            📞 Call 00000 000000
+        </a>
+
+    </div>
 
 </section>
 
 <footer>
-    © 2026 Liverpool Pro Plumbing. All rights reserved.
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>AquaFix Plumbing</h3>
+                <p>
+                    Professional plumbing services across Liverpool
+                    and surrounding areas.
+                </p>
+            </div>
+
+            <div>
+                <h3>Services</h3>
+                <a href="#services">Emergency Plumbing</a>
+                <a href="#services">Repairs</a>
+                <a href="#services">Bathrooms</a>
+                <a href="#services">Commercial Plumbing</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <a href="tel:00000000000">00000 000000</a>
+                <a href="#contact">Request a Quote</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 AquaFix Plumbing — Demo Website
+        </div>
+
+    </div>
+
 </footer>
 
 </body>
